@@ -1,0 +1,85 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contenedor {
+    background: white;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .cabecera {
+        background: black;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .cabecera-1{
+            background: #BB3B0E;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+            .caja-1 {
+                background: #FFCB74;
+                flex: 1 1 auto;
+            }
+            .caja-2 {
+                background: #FFCB74;
+                flex: 4 1 auto;
+            }
+            .caja-3 {
+                background: #FFCB74;
+                flex: 1 1 auto;
+            }
+        .cabecera-2 {
+            background: #708160;
+        }
+            .caja-4 {
+                background: #A4B494;
+            }
+    .cuerpo {
+        background: black;
+        display: flex;
+    }
+        .textos {
+            background: #3B5249;
+            display: flex;
+            flex: 2 1 auto;
+            flex-flow: row wrap;
+        }
+            .texto {
+                background: #519872;
+                flex: 1 1 40%;
+            }
+            .paginas {
+                background: #A4B494;
+                flex: 1 1 100%;
+            }
+        .lateral {
+            background: #86C4BA;
+            flex: 1 1 auto;
+        }
+            .caja {
+                background: #CEDEBD;
+            }
+    .pie-pagina{
+        background: black;
+    }
+        .pie {
+            background: crimson;
+
+        }
+
+@media only screen and (max-width: 800px) {
+    /*Versión móvil*/
+    .cabecera-1 {
+        flex-direction: column;
+    }
+    .cuerpo {
+        flex-direction: column;
+        background: gold;
+    }
+    .textos {
+        flex-direction: column;
+    }
+}
