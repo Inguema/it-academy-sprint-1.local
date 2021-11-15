@@ -70,6 +70,13 @@
 
         }
 
+@media all and (max-width: 800px) {
+    .cuerpo {
+        flex-direction: column;
+        background: gold;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     /*Versión móvil*/
     .cabecera-1 {
