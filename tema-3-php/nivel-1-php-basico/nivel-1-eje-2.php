@@ -9,22 +9,14 @@
 $txt = "Hello World!";
 
 //Variable convertida en mayúsculas
-
-echo strtoupper($txt);
-echo '</br>';
+echo strtoupper($txt).'</br> <hr>';
 
 //Longitud variable
-
-echo strlen($txt);
-echo '</br>';
+echo strlen($txt).'</br> <hr>';
 
 //Orden inverso
-
-echo strrev($txt);
-echo '</br>';
+echo strrev($txt).'</br> <hr>';
 
 //Conctanación de varios string
-
 $newTxt = "Este es el curso de PHP";
-echo $newTxt . " " . $txt;
-echo '</br>';
+echo $newTxt . " " . $txt.'</br> <hr>';
