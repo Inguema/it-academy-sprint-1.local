@@ -5,9 +5,12 @@
 
 function sumaValores ($x, $y) {
     if($x == $y) {
-        echo "Los valores son iguales por lo tanto el resultado es el doble de la suma: " . 2 * ($x + $y);
+        return "Los valores son iguales por lo tanto el resultado es el doble de la suma: " . 2 * ($x + $y);
     } else {
-        echo "El resultado de la suma de ambos valores es: " . ($x + $y);
+        return "El resultado de la suma de ambos valores es: " . ($x + $y);
     }
 }
 echo sumaValores(6 , 6);
+echo "</br>";
+echo "<hr>";
+echo sumaValores(5, 7);
