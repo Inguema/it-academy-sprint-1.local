@@ -12,16 +12,12 @@ $arrayDos = array(6, 7, 8);
 //Añadir un valor al array que contiene 3 integers.
 array_push($arrayDos, 9);
 print_r($arrayDos);
-echo "</br>";
-echo "<hr>";
+echo "</br> <hr>";
 
 //Mezcla los dos arrays e imprime el tamaño del array resultante.
 $result = array_merge($arrayUno, $arrayDos);
-echo "El tamaño del array resultante es: " . count($result);
-echo "</br>";
-echo "<hr>";
+echo "El tamaño del array resultante es: " . count($result) . "</br> <hr>";
+
 
 //Imprimir por pantalla el array resultante valor a valor.
-echo "Array resultante valor a valor: " . print_r($result);
-echo "</br>";
-echo "<hr>";
+echo "Array resultante valor a valor: " . print_r($result) . "</br> <hr>";

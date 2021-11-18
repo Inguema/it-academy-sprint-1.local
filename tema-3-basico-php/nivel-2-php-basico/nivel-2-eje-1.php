@@ -10,7 +10,5 @@ function sumaValores ($x, $y) {
         return "El resultado de la suma de ambos valores es: " . ($x + $y);
     }
 }
-echo sumaValores(6 , 6);
-echo "</br>";
-echo "<hr>";
+echo sumaValores(6 , 6) . "</br> <hr>";
 echo sumaValores(5, 7);
