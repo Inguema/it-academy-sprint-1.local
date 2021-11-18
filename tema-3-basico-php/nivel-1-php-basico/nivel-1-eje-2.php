@@ -17,6 +17,6 @@ echo strlen($txt).'</br> <hr>';
 //Orden inverso
 echo strrev($txt).'</br> <hr>';
 
-//Conctanación de varios string
+//Concatenación de varios string
 $newTxt = "Este es el curso de PHP";
 echo $newTxt . " " . $txt.'</br> <hr>';
