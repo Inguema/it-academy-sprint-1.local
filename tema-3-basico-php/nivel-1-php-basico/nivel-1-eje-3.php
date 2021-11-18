@@ -3,7 +3,7 @@
 de títol i lletra en negreta en HTML.
  */
 
-define("DATOS", "Inma Guerrero");
+const DATOS = "Inma Guerrero";
 ?>
 
 <html>
