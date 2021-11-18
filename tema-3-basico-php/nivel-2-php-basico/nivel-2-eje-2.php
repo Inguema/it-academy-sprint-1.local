@@ -4,7 +4,7 @@ $texto = "programa";
 
 //Para obtener la primera letra de la variable string
 $primero = substr("$texto", 0, 1);
-echo "$primero </br> <hr>";
+echo $primero . "</br> <hr>";
 
 //Para obtener la última letra de la variable string
 $ultimo = substr($texto, -1, 1);
