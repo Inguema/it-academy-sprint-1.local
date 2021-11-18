@@ -7,15 +7,16 @@
 //A partir del primer segundo después del min 3, se suma 0.05 por min.
 
 
-function gastoTelf($minLlamada) {
+function gastoTelf($minLlamada): float {
 
     if ($minLlamada <= 3){
-        $coste = 0.10;
-        return "Duración llamada: $minLlamada. Coste: $coste céntimos.";
+        return $coste = 0.10;
+
     } else {
         $intLlamada = intval($minLlamada);
-        $coste = 0.10 + 0.05 + (($intLlamada - 3) * 0.05);
-        return "Duración llamada: $minLlamada minutos. Coste: $coste céntimos.";
+        return $coste = 0.10 + 0.05 + (($intLlamada - 3) * 0.05);
     }
 }
-echo gastoTelf(7.5);
+$minLlamada = 6.9;
+$gastoTelf = gastoTelf($minLlamada);
+echo "Duración llamada: " . $minLlamada . ". Coste: " . $gastoTelf . " céntimos.";

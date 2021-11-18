@@ -5,13 +5,21 @@ Escribe La función isBitten ()que devuelve TRUE  con un 50% de probabilidad y F
 Consejo: puede que la función rand () te resulte útil.
  */
 
-function isBitten() {
+function isBitten(): bool {
     $resultado = rand(1, 100);
     //var_dump($resultado);
     if ($resultado <= 50){
-        echo "Charli te morderá el dedo.";
+        return true;
     } else {
-        echo "Te has librado de la mordedura";
+        return false;
     }
 }
-echo isBitten();
+
+$bitten = isBitten();
+var_dump($bitten);
+
+if($bitten) {
+    echo "Charli te morderá el dedo";
+} else {
+    echo "Te has librado de la mordedura";
+}
