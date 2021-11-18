@@ -18,6 +18,6 @@ echo "</br> <hr>";
 $result = array_merge($arrayUno, $arrayDos);
 echo "El tamaño del array resultante es: " . count($result) . "</br> <hr>";
 
-
 //Imprimir por pantalla el array resultante valor a valor.
-echo "Array resultante valor a valor: " . print_r($result) . "</br> <hr>";
+echo "Array resultante valor a valor: " ."</br>";
+print_r($result) . "</br> <hr>";
