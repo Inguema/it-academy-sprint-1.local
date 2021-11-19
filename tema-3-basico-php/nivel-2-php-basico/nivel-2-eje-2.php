@@ -1,6 +1,7 @@
 <?php
 
 $texto = "programa";
+echo "PALABRA ORIGINAL: " . $texto . "</br><hr>";
 
 //Para obtener la primera letra de la variable string
 $primero = substr("$texto", 0, 1);
