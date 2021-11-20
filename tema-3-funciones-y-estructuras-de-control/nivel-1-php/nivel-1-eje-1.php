@@ -4,10 +4,19 @@
 
 $x = 4;
 //$x = $_GET['edad']; // por parametro en url ?edad=
-$residuo = $x % 2;
 
-if ($residuo === 0) {
-    echo "$x ES PAR";
-} else {
-    echo "$x IMPAR";
+
+function parImpar ($x) : string {
+
+    $residuo = $x % 2;
+
+    if ($residuo === 0) {
+        return "$x es PAR";
+    } else {
+        return "$x es IMPAR";
+    }
 }
+
+$result = parImpar($x);
+echo $result;
+

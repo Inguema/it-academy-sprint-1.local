@@ -8,15 +8,14 @@
 
 
 function gastoTelf($minLlamada): float {
-
-    if ($minLlamada <= 3){
-        return $coste = 0.10;
-
+    if ($minLlamada <= 3) {
+        return 0.10;
     } else {
-        $intLlamada = intval($minLlamada);
-        return $coste = 0.10 + 0.05 + (($intLlamada - 3) * 0.05);
+        $redondeoTiempo = ceil($minLlamada);
+        return 0.10 + (($redondeoTiempo - 3) * 0.05);
     }
 }
-$minLlamada = 6.9;
+
+$minLlamada = 6.2;
 $gastoTelf = gastoTelf($minLlamada);
-echo "Duración llamada: " . $minLlamada . ". Coste: " . $gastoTelf . " céntimos.";
+echo "Duración llamada: " . $minLlamada . ". Coste: " . $gastoTelf . " €";

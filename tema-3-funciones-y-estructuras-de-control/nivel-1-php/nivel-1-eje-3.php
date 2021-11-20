@@ -1,10 +1,26 @@
 <?php
 //Imagínate que queremos que cuente hasta un número diferente de 10. Programa la función para que el final de la cuenta esté parametrizado.
 
-$y = 100;
+$final = 50;
 
-for($x = 0; $x <= $y; $x++){
-    if($x % 2 === 0) {
-        echo $x .  '</br>';
+// Calcular resultados
+function contarNum(int $final): array {
+    $result = [];
+    for ($x = 2; $x <= $final; $x++) {
+        $result[] = $x;
+        $x++;
+    }
+    return $result;
+}
+
+// Calcular resultados
+function mostrar(array $numeros) {
+    foreach ($numeros as $numero) {
+        echo $numero . "</br>";
     }
 }
+
+echo "Comienza a contar: </br>";
+
+$numeros = contarNum($final);
+mostrar($numeros);
