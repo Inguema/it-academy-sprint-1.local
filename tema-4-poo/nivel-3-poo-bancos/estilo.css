@@ -1,0 +1,121 @@
+/** Header y Menú Navegación **/
+.nombre-banco {
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+}
+
+.nav-principal {
+    justify-content: space-around;
+    display: flex;
+    background-color: #d7d0d0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:hover {
+    color: white;
+}
+
+/** Main y Opciones para ingresar y retirar dinero**/
+.hero {
+    background-image: url("img/banco.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.opciones {
+    display: flex;
+    background-color: #d50283;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 40px 40px 40px 40px;
+    height: fit-content;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.opciones:hover {
+    background-color: #519872;
+}
+
+/** Footer **/
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #d7d0d0;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/** Estilos ingresar y retirar html **/
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.texto-p p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.caja-formulario {
+    background-color: white;
+    -webkit-box-shadow: inset 0 0 10px #d50283;
+    border: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 100px 20px 100px;
+    padding: 10px 10px 20px 10px;
+}
+
+input {
+    border-radius: 20px;
+    padding: 5px 5px 5px 10px;
+    font-weight: bold;
+}
+
+.texto-interior {
+    color: #d50283;
+    font-weight: bold;
+}
+.enviar {
+    color: black;
+    background-color: #d50283;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.enviar:hover {
+    background-color: #519872;
+}
+
+/** Estilos ingresar y retirar php **/
+h3 {
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+}
+
+p {
+    font-weight: bold;
+}

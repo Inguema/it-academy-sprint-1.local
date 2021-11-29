@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Retirar Euros</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="nombre-banco">Bienvenidos a la Banca Online de IT Academy</h1>
+    </header>
+
+    <form class="texto-p" action="retirar.php" method="post">
+        <div class="caja-formulario">
+            <p>Nombre: </p>
+            <input class="texto-interior" type="text" name="nombre" value="" required="required">
+            <p>Apellidos: </p>
+            <input class="texto-interior" type="text" name="apellidos" value="" required="required">
+            <p>Número de Cuenta:</p>
+            <input class="texto-interior" type="text" name="cuenta" value="" required="required">
+            <p>Saldo:</p>
+            <input class="texto-interior" type="number" name="saldo" value="" required="required">
+            <p>Cantidad que desea retirar:</p>
+            <input class="texto-interior" type="number" name="cantidad" value="" required="required">
+        </div>
+        <div>
+            <input class="enviar" type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <footer>
+        <p class="footer">Todos los derechos reservados IT Academy Banco.</p>
+    </footer>
+
+</body>
+</html>
