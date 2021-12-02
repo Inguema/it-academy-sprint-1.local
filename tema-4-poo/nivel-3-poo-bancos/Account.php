@@ -25,7 +25,7 @@ class Account {
     // si no existe el método deberá devolver un mensaje de error
     public function retirarDinero($cantidadRetirar) {
         if ($this->saldo - $cantidadRetirar >= 0) {
-            $this->saldo -= $cantidadRetirar;
+            echo $this->saldo -= $cantidadRetirar;
         } else {
             echo "<p style='color: #d50283'> ¡¡No dispone de dinero suficiente en la cuenta!!</p>";
         }
