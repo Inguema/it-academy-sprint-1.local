@@ -11,10 +11,9 @@ require_once 'figura.php';
 require_once 'triangulo.php';
 require_once 'rectangulo.php';
 
-$triangulo = new Triangulo(10, 5,  "El área del triángulo es: ");
-$triangulo->calcularArea();
+$triangulo = new Triangulo(10, 5);
+$triangulo->area();
 
-
-$rectangulo = new Rectangulo(10, 6, "El área del rectángulo es: ");
-$rectangulo->calcularArea();
+$rectangulo = new Rectangulo(10, 6);
+$rectangulo->area();
 

@@ -19,6 +19,6 @@ class Figura {
 
     //Métodos de clase
     public function area () {
-        echo $this->area . "<br/>";
+
     }
 }
