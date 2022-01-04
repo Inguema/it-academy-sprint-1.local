@@ -1,0 +1,204 @@
+/** Globales **/
+body {
+    background: white;
+    font-family: Verdana;
+    display: flex;
+}
+.contenedor {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 1200px;
+    background: white;
+    margin: auto;
+}
+
+/** Contenedor formado por logo, menú de navegación y rrss**/
+.contenedor-menu {
+    display: flex;
+}
+
+        .logo {
+            float: left;
+            flex: 1 1 auto;
+            padding: 20px;
+        }
+        .menu {
+            float: bottom;
+            padding: 10px;
+            flex: 4 1 auto;
+            display: flex;
+        }
+            .opciones {
+                display: flex;
+                justify-content: center;
+                flex-flow: row nowrap;
+            }
+            .opciones li {
+                display: flex;
+                list-style: none;
+                text-decoration-color: darkgrey;
+            }
+            .opciones li a{
+                padding: 25px;
+                text-decoration: none;
+                color: darkgrey;
+            }
+
+                li a:hover{
+                    color: salmon;
+                }
+
+        .redes {
+            display: flex;
+            justify-content: right;
+            margin: 20px;
+            padding: 30px;
+            flex: 1 1 auto;
+        }
+
+        .redes a {
+            padding: 10px;
+        }
+
+
+/** Imagen con caja transparente con texto **/
+.hero {
+    background-image: url("img/header-imagen.png");
+    background-repeat: no-repeat;
+    background-size: 190%;
+    background-position: bottom;
+    height: 500px;
+    width: 1200px;
+}
+
+.caja-texto-frase {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background: rgba(169, 169, 169, 0.3);
+    height: 150px;
+    width: 1000px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 194px;
+}
+
+.frase {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: salmon;
+}
+
+.p {
+    line-height: 1.333;
+    text-align: justify;
+    font-size: x-large;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+}
+
+/** Artículos **/
+.cuerpo {
+    background: #d7d0d0;
+    display: flex;
+    margin-top: 10px;
+}
+
+.textos{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2 1 auto;
+    background: #d7d0d0;
+    margin-right: 10px;
+}
+
+.texto{
+    display: flex;
+    width: 400px;
+    padding: 10px;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+
+.texto-encima{
+    display: flex;
+    position: absolute;
+    color: gold;
+}
+
+.lateral {
+    display: flex;
+    background-color: white;
+    flex: 1 1 auto;
+    width: 700px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.caja {
+    background: #d7d0d0;
+    padding: 10px;
+}
+
+.cajaTexto {
+    background: white;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    background: salmon;
+    color: white;
+    padding: 10px 0px 2px 4px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.textoFin {
+    display: flex;
+    padding: 5px 15px 15px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*texto en dos columnas*/
+.textoArt {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+/** Footer **/
+.footer {
+    margin-top: 10px;
+    background: #d7d0d0;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/** Responsive **/
+@media all and (max-width: 800px) {
+    .cuerpo, .opciones, .redes, .textos, .texto-encima, .textoFin, .lateral, .caja, .textoFin, .footer{
+        flex-direction: column;
+    }
+
+    .footer, .textoFin {
+        text-align: left;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px){
+    .cuerpo, .opciones, .redes, .textos, .texto-encima, .textoFin, .lateral, .caja {
+        flex-direction: column;
+    }
+}
