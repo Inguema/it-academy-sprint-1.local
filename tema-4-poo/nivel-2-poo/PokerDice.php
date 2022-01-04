@@ -24,4 +24,9 @@ class PokerDice {
     public function figuraDado($lanzamiento): string {
         return $this->dado[$lanzamiento];
     }
+
+    //Método getTotalThrows que debe mostrar el número total de tiradas entre todos los dados
+    public function getTotalLanzamientos() {
+
+    }
 }

@@ -31,14 +31,8 @@ $dadoCinco = new PokerDice();
 $lanzamiento = $dadoCinco->lanzarDado();
 $tiradas[] = $dadoCinco->figuraDado($lanzamiento);
 
-//Código que muestra el número de tiradas con los resultados de los 5 dados
+//Realiza una aplicación que permita echar cinco dados de póquer a la vez.
 $resultados = array_count_values($tiradas);
 foreach ($resultados as $caraDado => $resultado) {
     echo 'De la cara ' . $caraDado . ' hay ' . $resultado . ' dados. <br/>';
 }
-
-
-
-
-
-
