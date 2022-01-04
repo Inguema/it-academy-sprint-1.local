@@ -1,0 +1,63 @@
+.contenedor {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.tema {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #F4BEEE;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.nivel1 {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #A8ECE7;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.nivel2 {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #FDFF8F;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.nivel3 {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #F1F7E7;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #D47AE8;
+    border-radius: 20px;
+}
+
+p {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
